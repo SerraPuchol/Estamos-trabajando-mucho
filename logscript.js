@@ -10,7 +10,19 @@ $(document).ready(function () {
             console.log(bandera);
         } else {
             $(".shrink").removeClass("shrink");
-            $(".signupform").hide();
+            $(".signupform, .loginform").hide();
+            bandera = 1;
+        }
+    });
+    $(".login").on("click", function () {
+        if (bandera == 1) {
+            $(".loginform, .signup, .login").addClass("shrink");
+            $(".loginform").show();
+            bandera = 0;
+            console.log(bandera);
+        } else {
+            $(".shrink").removeClass("shrink");
+            $(".signupform, .loginform").hide();
             bandera = 1;
         }
     });
@@ -20,9 +32,6 @@ $(document).ready(function () {
     $("input").on("click", function () {
         $(".activo").removeClass("activo");
         $(this).addClass("activo");
-    });
-    $(document).on("click", function () {
-        $(".activo").removeClass("activo");
     });
 
     $("input[type=submit").on("click", function () {
