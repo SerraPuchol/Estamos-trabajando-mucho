@@ -4,7 +4,7 @@ $(document).ready(function () {
     var bandera = 1;
     $(".signup").on("click", function () {
         if (bandera == 1) {
-            $(".signupform, .signup, .login").addClass("shrink");
+            $(".signup, .login").addClass("shrink");
             $(".signupform").show();
             bandera = 0;
             console.log(bandera);
@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
     $(".login").on("click", function () {
         if (bandera == 1) {
-            $(".loginform, .signup, .login").addClass("shrink");
+            $(".signup, .login").addClass("shrink");
             $(".loginform").show();
             bandera = 0;
             console.log(bandera);

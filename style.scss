@@ -12,6 +12,7 @@
 
     &:hover {
         border: solid ivory 4px;
+        padding: 121px;
     }
 }
 
@@ -22,6 +23,9 @@
 .shrink{
     height: auto;
     padding: 5px;
+    &:hover {
+        padding: 1px;
+    }
 }
 
 
