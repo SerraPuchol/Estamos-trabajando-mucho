@@ -1,0 +1,46 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: DarkSlateGray;
+    color: ivory;
+}
+
+.signup, .login{
+    text-align: center;
+    height: 330px;
+    padding: 125px;
+
+    &:hover {
+        border: solid ivory 4px;
+    }
+}
+
+.signupform, .loginform{
+    display: none;
+}
+
+.shrink{
+    height: auto;
+    padding: 5px;
+}
+
+
+
+input{
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 27.5px;
+    margin-left: 30px;
+    background-color: rgb(12, 49, 49);
+    border: 2px solid white;
+    padding: 14px 10px;
+    border-radius: 24px;
+    width: 200px;
+    transition: 0.25s;
+    outline: none;
+}
+
+.activo{
+    background-color: grey;
+}
