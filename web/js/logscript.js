@@ -4,25 +4,13 @@ $(document).ready(function () {
     var bandera = 1;
     $(".signup").on("click", function () {
         if (bandera == 1) {
-            $(".signupform, .signup, .login").addClass("shrink");
-            $(".signupform").show();
+            $(".signup").addClass("shrink");
+            $(".signupform").show(250);
             bandera = 0;
             console.log(bandera);
         } else {
             $(".shrink").removeClass("shrink");
-            $(".signupform, .loginform").hide();
-            bandera = 1;
-        }
-    });
-    $(".login").on("click", function () {
-        if (bandera == 1) {
-            $(".loginform, .signup, .login").addClass("shrink");
-            $(".loginform").show();
-            bandera = 0;
-            console.log(bandera);
-        } else {
-            $(".shrink").removeClass("shrink");
-            $(".signupform, .loginform").hide();
+            $(".signupform").hide(250);
             bandera = 1;
         }
     });
