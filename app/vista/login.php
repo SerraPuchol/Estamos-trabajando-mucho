@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo 'css/'.Config::$mvc_login_css ?>">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<?php ob_start() ?>
+    <main class="container">
+
+    <div class="login">
+        <h1>LOG IN</h1>
+        <form action="index.php?ctl=login" method="POST" name="login">
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="pass" placeholder="password">
+                <input type="submit" name="login" value="login">
+        </form>
+    </div>
+
+
     <div class="signup">
         <h1>SIGN UP</h1>
     </div>
 
-    <div class="signupform" type="hidden">
-        <form action="" method="post">
+    <div class="signupform">
+        <form action="index.php?ctl=login" method="POST" name="registerform" enctype="multipart/form-data">
             <p>
-                <input type="email" name="email" placeholder="emali">
+                <input type="email" name="email" placeholder="email">
             </p>
             <p>
-                <input type="password" name="contraseña" placeholder="contraseña">
+                <input type="password" name="pass" placeholder="pass">
             </p>
             <p>
-                <input type="text" name="nombre" placeholder="nombre">
-                <input type="text" name="apellidos" placeholder="apellidos">
+                <input type="text" name="nombre" placeholder="name">
+                <input type="text" name="apellido" placeholder="surname">
             </p>
             <p>
                 <input type="file" name="profilepic">
             </p>
             <p>
-                <input type="submit" name="enviar" value="signup">
+                <input type="submit" name="signup" value="signup">
             </p>
         </form>
     </div>
 
-    <div class="loginform" type="hidden">
-        <form action="" method="post">
-            <p>
-                <input type="email" name="email" placeholder="email">
-            </p>
-            <p>
-                <input type="password" name="contraseña" placeholder="contraseña">
-            </p>
-            <p>
-                <input type="submit" name="enviar" value="signup">
-            </p>
-        </form>
-    </div>
+</main>
 
-    <div class="login">
-        <H1>LOG IN</H1>
-    </div>
-
-
-
-</body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -68,6 +60,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous">
     </script>
-<script src="logscript.js"></script>
+<script src="js/logscript.js"></script>
 
+</body>
 </html>

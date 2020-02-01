@@ -1,11 +1,18 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
-    background-color: DarkSlateGray;
     color: ivory;
 }
 
-.signup, .login{
+body{
+    background-color: rgb(22, 22, 22);
+}
+
+h1, form, input{
+    display: inline;
+}
+
+.signup{
     text-align: center;
     height: 330px;
     padding: 125px;
@@ -23,7 +30,7 @@
 .shrink{
     height: auto;
     padding: 5px;
-    &:hover {
+    &:hover{
         padding: 1px;
     }
 }
@@ -36,7 +43,7 @@ input{
     margin-bottom: 10px;
     margin-right: 27.5px;
     margin-left: 30px;
-    background-color: rgb(12, 49, 49);
+    background-color: rgb(22, 22, 22);
     border: 2px solid white;
     padding: 14px 10px;
     border-radius: 24px;
